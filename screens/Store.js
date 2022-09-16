@@ -1,4 +1,4 @@
-import { FlatList, SafeAreaView, ScrollView, Text, View } from 'react-native'
+import { FlatList, SafeAreaView, Text, View } from 'react-native'
 import React, { Component } from 'react'
 import { Stack, ActivityIndicator } from "@react-native-material/core"
 import axios from 'axios'
