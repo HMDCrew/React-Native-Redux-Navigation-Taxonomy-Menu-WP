@@ -78,9 +78,8 @@ export class Store extends Component {
 
       if ('error' !== data.status) {
         this.setState({ prod: [...prod, ...data.message] })
+        this.setState({ page: page + 1 })
       }
-
-      this.setState({ page: page + 1 })
 
     } catch (error) {
       console.log("Error", error);
