@@ -22,7 +22,7 @@ export class DrawerNavigator extends Component {
                     drawerActiveTintColor: COLORS.white,
                     drawerInactiveTintColor: COLORS.white,
                 }}
-                drawerContent={props => <SidebarContent {...props} /> }
+                drawerContent={props => <SidebarContent {...props} />}
             >
 
                 <Drawer.Screen name="Home" component={Home} />

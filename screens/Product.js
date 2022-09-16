@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View, Dimensions, ScrollView, FlatList, Image } from 'react-native'
+import { Text, View, Dimensions, ScrollView, Image } from 'react-native'
 import { connect } from 'react-redux'
 import RenderHtml from 'react-native-render-html'
 
@@ -14,12 +14,6 @@ export class Product extends Component {
 
     componentDidMount() {
         this.props.getProduct(this.props.route.params.item.id);
-    }
-    componentDidUpdate(prevProps, prevState, snapshot) {
-
-        if (prevProps.route.params.item.id !== this.props.route.params.item.id) {
-            this.props.getProduct(this.props.route.params.item.id);
-        }
     }
 
     render() {
