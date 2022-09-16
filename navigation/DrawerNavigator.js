@@ -28,7 +28,9 @@ export class DrawerNavigator extends Component {
                 <Drawer.Screen name="Home" component={Home} />
 
                 {/* don't use stack on first position because is used for nested store and product */}
-                <Drawer.Screen name="STACK" component={Stack} />
+                <Drawer.Screen name="STACK" component={Stack} options={{
+                    drawerItemStyle: { height: 0 }
+                }} />
 
             </Drawer.Navigator>
         )
